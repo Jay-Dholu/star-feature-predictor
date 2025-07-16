@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="w-full max-w-md bg-cyan-800 rounded-xl shadow-xl p-6 mt-24">
+		<form action="" method="post" class="space-y-4 text-center">
+			{{ form.hidden_tag() }}
+			<div>
+				{{ form.email.label(class="block text-center text-2xl font-medium mt-2 mb-1 text-white") }}
+				{{ form.email(class="w-full rounded-sm px-3 py-2 mb-2") }}
+
+				{{ form.password.label(class="block text-center text-2xl font-medium mt-2 mb-1 text-white") }}
+				{{ form.password(class="w-full rounded-sm px-3 py-2 mb-2") }}
+			</div>
+			<div>
+				{{ form.submit(class="w-1/3 bg-cyan-600 hover:bg-cyan-900 text-white text-md mt-2 px-2 py-2 rounded-xl") }}
+			</div>
+			<div class="text-white text-xl mt-8">Don't have an account?
+				<a href="{{ url_for('sign_up') }}" class="text-orange-600">Create account</a>
+			</div>
+		</form>
+	</div>
+{% endblock content %}

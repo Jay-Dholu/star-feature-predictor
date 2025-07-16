@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex-grow flex flex-col items-center justify-center text-white gap-y-16">
+	<h1 class="text-4xl font-bold mb-8">What do you want to predict?</h1>
+	<div class="flex flex-col items-center gap-y-36">
+		<div class="flex flex-row justify-evenly gap-x-56">
+			<a href="/predict?target=star_color"> <button class="predict-button">Star Color</button> </a>
+			<a href="/predict?target=spectral_class"> <button class="predict-button">Spectral Class</button> </a>
+			<a href="/predict?target=star_type"> <button class="predict-button">Star Type</button> </a>
+		</div>
+		<div class="flex flex-row justify-evenly gap-x-56">
+			<a href="/predict?target=temperature"> <button class="predict-button">Temperature</button> </a>
+			<a href="/predict?target=radius"> <button class="predict-button">Radius</button> </a>
+			<a href="/predict?target=luminosity"> <button class="predict-button">Luminosity</button> </a>
+		</div>
+		<div>
+			<a href="/predict?target=absolute_magnitude"> <button class="predict-button">Absolute Magnitude</button> </a>
+		</div>
+	</div>
+</div>
+{% endblock content %}

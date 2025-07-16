@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.predict-button {
+  padding: 0.5rem 1rem;              /* py-2 px-4 = 8px 16px */
+  width: 18rem;                      /* w-72 = 288px */
+  background-color: #0e7490;        /* bg-cyan-700 */
+  font-size: 1.5rem;                 /* text-2xl */
+  font-weight: 700;                 /* font-bold */
+  border-radius: 0.5rem;            /* rounded-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -4px rgba(0, 0, 0, 0.1); /* shadow-xl */
+  transition: all 0.3s ease-in-out; /* transition-all duration-600 ease-in-out */
+}
+
+.predict-button:hover {
+  background-color: #164e63;        /* hover:bg-cyan-900 */
+  transform: scale(1.10);           /* hover:scale-110 */
+}
