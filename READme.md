@@ -42,4 +42,4 @@ A machine learning-powered web application that predicts stellar properties like
 
 ## Note-
 
-- Trained models are too large to upload on github, as it only provide 100 MB of space for each file and my models are greater than 700 MB. So, you can run the 'model-training.py' file to train the models and then all the models will be trained and stored in the folder called 'models'. And all set, you are ready to run web-app locally on your desktop.
+-Run the 'model-training.py' file to train the models and then all the models will be trained and stored in the folder called 'models'. And all set, you are ready to run web-app locally on your desktop.
