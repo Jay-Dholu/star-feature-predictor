@@ -283,6 +283,13 @@ def past_predictions():
 
     target = request.args.get('target')
     model_prediction = request.args.get('model_prediction')
+
+    if target.lower() not in CATEGORICAL_COLUMNS:
+        try:
+            model_prediction = float(model_prediction)
+        except (ValueError, TypeError):
+            model_prediction = None
+
     flash("You can see your past predictions here.", "info")
 
     user_predictions = Prediction.query.filter_by(user_id=session['user_id']).order_by(Prediction.prediction_time.desc()).all()
