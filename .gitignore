@@ -23,3 +23,7 @@ Thumbs.db
 
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Ignore model files
+models/*.joblib
+models/
