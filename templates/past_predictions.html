@@ -9,13 +9,13 @@
 		{% elif target == "star_type" %}
 			Star Type is:  {{ model_prediction }}
 		{% elif target == "temperature" %}
-			Temperature is:  {{ model_prediction }} Kelvin
+			Temperature is:  {{ model_prediction|round(4) }} Kelvin
 		{% elif target == "radius" %}
-			Radius is:  {{ model_prediction }} R☉ (Solar Radii)
+			Radius is:  {{ model_prediction|round(4) }} R☉ (Solar Radii)
 		{% elif target == "luminosity" %}
-			Luminosity is:  {{ model_prediction }} L☉ (Solar Luminosities)
+			Luminosity is:  {{ model_prediction|round(4) }} L☉ (Solar Luminosities)
 		{% elif target == "absolute_magnitude" %}
-			Absolute Magnitude is:  {{ model_prediction }}
+			Absolute Magnitude is:  {{ model_prediction|round(4) }}
 		{% else %}
 			Nothing to predict yet
 		{% endif %}
