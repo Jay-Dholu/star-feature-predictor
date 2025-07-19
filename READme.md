@@ -9,8 +9,8 @@ A machine learning-powered web application that predicts stellar properties like
 ![App Screenshot](static/images/sign-up.png)
 ![App Screenshot](static/images/login.png)
 ![App Screenshot](static/images/prediction-options.png)
-![App Screenshot](static/images/predicting-radius.png)
-![App Screenshot](static/images/prediction-history.png)
+![App Screenshot](static/images/predicting.png)
+![App Screenshot](static/images/predicted.png)
 
 ## Features
 
