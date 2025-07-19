@@ -31,7 +31,7 @@ numerical_features = ["Temperature", "Radius", "Luminosity", "Absolute_Magnitude
 models = {}
 
 for feature, ftype in feature_types.items():
-    print(f"🚀 Training model to predict: {feature}")
+    print(f"🚀  Training model to predict: {feature}")
     start_time = time()
 
     # Define X and y
@@ -64,7 +64,6 @@ for feature, ftype in feature_types.items():
     # Define model type
     model = RandomForestClassifier() if ftype == "clf" else RandomForestRegressor(n_estimators=50, max_depth=10, n_jobs=-1, random_state=42)
 
-
     # Create pipeline
     master_pipeline = Pipeline([
         ("preprocessor", preprocessor),
@@ -85,11 +84,11 @@ for feature, ftype in feature_types.items():
     y_pred = master_pipeline.predict(X_test)
     if ftype == "clf":
         acc = accuracy_score(y_test, y_pred) * 100
-        print(f"✅ Accuracy Score: {acc:.4f}%")
+        print(f"✅  Accuracy Score: {acc:.4f}%")
     else:
         r2 = r2_score(y_test, y_pred) * 100
-        print(f"✅ R2 Score: {r2:.4f}%")
+        print(f"✅  R2 Score: {r2:.4f}%")
 
-    print(f"⏱️ Training completed in {time() - start_time:.2f} seconds\n")
+    print(f"⏱️  Training completed in {time() - start_time:.2f} seconds\n")
 
 print("🎉 All MODELS trained and saved!")
